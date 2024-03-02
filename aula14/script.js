@@ -20,5 +20,7 @@ console.log(umaString2.slice(-5, -1)); // É possivel pegar de trás para frente
 
 console.log(umaString2.split(' ', 3)); // Usado para dividir uma string através do caractere selecionado.
 
+console.log(umaString2.toUpperCase()); // Bota a string toda maiusculo.
+console.log(umaString2.toLowerCase()); // Bota a string toda minusculo.
 
 
