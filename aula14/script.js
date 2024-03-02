@@ -18,5 +18,7 @@ console.log(umaString2.length); // Usa para saber o tamanho da string.
 console.log(umaString2.slice(2, 6)); // Usa para separar alguma palavra da string.
 console.log(umaString2.slice(-5, -1)); // É possivel pegar de trás para frente utilizando o numero negativo.
 
+console.log(umaString2.split(' ', 3)); // Usado para dividir uma string através do caractere selecionado.
+
 
 
