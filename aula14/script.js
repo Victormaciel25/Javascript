@@ -7,7 +7,7 @@ console.log(umaString.concat(' em', ' um', ' lindo dia.')); // Usa para juntar a
 console.log(umaString + ' em um lindo dia.');
 console.log(`${umaString} em um lindo dia.`);
 
-console.log(umaString.indexOf('o', 3)); // Usa para encontrar o indice da letra selecionada, da direção esquerda para direita.
+console.log(umaString.indexOf('o', 3)); // Usa para encontrar o indice da letra selecionada, da direção esquerda para direita. ('letra procurada', apartir do indice tal)
 console.log(umaString.lastIndexOf('m', 3)); // Usa para encontrar o indice da letra selecionada, da direção direita para esquerda.
 
 let umaString2 = 'O rato roeu a roupa do rei de roma.';
