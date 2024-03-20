@@ -8,10 +8,20 @@ var nome2 = 'Luiz';
 
 if (verdadeira) {
     let nome = 'Otávio'; // criando
-    console.log(nome, nome2);
+    var nome2 = 'Rogério'; // redeclarando
 
     if (verdadeira){
-        let nome = 'Outra coisa'
-        console.log(nome, nome2);
+        var nome2 = 'Ronaldo';
+        let nome = 'Outra coisa'; // redeclarando
     }
 }
+
+console.log(nome,nome2);
+
+function falaOi () {
+    var sobrenome = 'Miranda';
+}
+
+console.log(sobrenome);
+
+falaOi();
