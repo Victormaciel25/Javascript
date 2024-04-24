@@ -1,3 +1,13 @@
+function criaHoraDosSegundos (segundos) {
+    const data = new Date(segundos * 1000);
+    return data.toLocaleString('pt-BR', {
+        hour12: false,
+        timeZone: 'UTC'
+    });
+}
+
+console.log(criaHoraDosSegundos(10));
+
 const relogio = document.querySelector('.relogio');
 const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
