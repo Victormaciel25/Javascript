@@ -9,15 +9,31 @@ function criaLi() {
 
 inputTarefa.addEventListener('keypress', function(e) {
     if (e.keyCode === 13) {
-        console.log('ENTER pressionado');
+        if(!inputTarefa.value) return;
+        criaTarefa(inputTarefa.value);
     }
-})
+});
+
+function limpaInput() {
+    inputTarefa.value = '';
+    inputTarefa.focus();
+};
+
+function criaBotaoApagar(li) {
+    li.innerText += ' ';
+    const botaoApagar = document.createElement('button');
+    botaoApagar.innerText = 'Apagar';
+    li.appendChild(botaoApagar);
+}
+
 
 function criaTarefa(textoInput) {
    const li = criaLi();
    li.innerText = textoInput;
    tarefas.appendChild(li);
-}
+   limpaInput();
+   criaBotaoApagar(li);
+};
 
 btnTarefa.addEventListener('click', function() {
     if(!inputTarefa.value) return;
